@@ -4,25 +4,22 @@ const navItems = ['Home', 'About', 'Projects', 'Skills', 'Contact']
 
 const projects = [
   {
+    title: 'Prompt Vault',
+    description: '一个用于整理常用 AI 提示词的工具想法，帮助我沉淀写作、学习和项目实践中的 prompt。',
+    tags: ['AI Tools', 'Prompt Writing'],
+    status: '开发中',
+  },
+  {
     title: 'Personal Website',
-    description: '我的个人网站，用于展示个人介绍、技能、项目和联系方式。',
-    stack: 'React / Vite / CSS / Vercel',
+    description: '当前这个个人主页，用来展示我的介绍、技能、项目和联系方式，也记录自己的学习过程。',
+    tags: ['React', 'Vite', 'Vercel'],
     status: '已上线',
-    tag: 'Portfolio',
   },
   {
-    title: 'Prompt 管理器',
-    description: '用于整理我常用的 AI 写作提示词，让创作和学习流程更清晰。',
-    stack: 'AI Tools / Prompt Writing',
-    status: '规划中',
-    tag: 'AI Tools',
-  },
-  {
-    title: 'AI 创作实验',
-    description: '探索 AI 辅助写作、图像生成和网页开发，把想法快速做成作品。',
-    stack: 'Writing / Image Generation / Web Development',
-    status: '持续实验',
-    tag: 'Experiment',
+    title: 'Learning Experiments',
+    description: '课程实验、前端练习和 AI 辅助创作记录，把零散学习逐步整理成可复盘的小作品。',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    status: '学习中',
   },
 ]
 
@@ -32,10 +29,10 @@ const skills = [
   'JavaScript',
   'React',
   'Vite',
-  'Tailwind CSS',
   'Git / GitHub',
   'Vercel',
-  'AI-assisted development',
+  'AI-assisted coding',
+  'Personal knowledge management',
 ]
 
 function App() {
@@ -58,10 +55,11 @@ function App() {
         <div className="hero-copy">
           <p className="eyebrow">大学生 / AI 工具探索者</p>
           <h1>你好，我是首承壮。</h1>
-          <p className="hero-role">用 AI 和代码，把想法做成可以访问和持续迭代的小项目。</p>
+          <p className="hero-role">
+            我在学习前端开发、AI 工具和个人知识管理，也在用项目记录自己的成长。
+          </p>
           <p className="hero-intro">
-            我是首承壮，一名正在学习前端开发、AI 工具使用和个人表达的大学生。我喜欢用
-            AI 和代码把想法做成可以访问、展示和持续迭代的小项目，也用这个网站记录学习、项目和作品集积累。
+            我喜欢把想法做成可以访问、展示和持续迭代的小工具或网页。这个网站是我的个人主页，也会慢慢成为我的作品集和学习记录。
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#projects">
@@ -75,7 +73,10 @@ function App() {
 
         <div className="hero-panel" aria-label="个人项目工作台插画">
           <div className="workbench-header">
-            <span className="panel-label">个人项目工作台</span>
+            <div>
+              <span className="panel-label">个人项目工作台</span>
+              <strong>Personal Site</strong>
+            </div>
             <div className="window-dots" aria-hidden="true">
               <span></span>
               <span></span>
@@ -83,29 +84,35 @@ function App() {
             </div>
           </div>
 
-          <div className="code-window">
-            <div className="code-line short"></div>
-            <div className="code-line"></div>
-            <div className="code-line medium"></div>
-            <p>build idea with AI + React</p>
+          <div className="workbench-grid">
+            <div className="code-window">
+              <div className="code-window-top">
+                <span>React / Vite</span>
+                <small>live</small>
+              </div>
+              <div className="code-line short"></div>
+              <div className="code-line"></div>
+              <div className="code-line medium"></div>
+              <p>build ideas into small, usable pages</p>
+            </div>
+
+            <div className="mini-project-card">
+              <span>Notes / Projects</span>
+              <strong>学习记录</strong>
+              <small>前端练习、AI 工具、课程实验</small>
+            </div>
           </div>
 
           <div className="prompt-card">
-            <span>Prompt</span>
-            <p>把学习记录整理成一个清爽的个人网站首页。</p>
-          </div>
-
-          <div className="mini-project-card">
-            <span>Project</span>
-            <strong>Personal Website</strong>
-            <small>已上线 · 持续迭代</small>
+            <span>AI-assisted coding</span>
+            <p>把灵感、笔记和项目想法整理成可以持续迭代的个人主页。</p>
           </div>
 
           <div className="tool-tags" aria-label="使用中的工具">
             <span>React</span>
-            <span>AI</span>
             <span>Vite</span>
-            <span>Vercel</span>
+            <span>AI-assisted coding</span>
+            <span>Notes</span>
           </div>
         </div>
       </section>
@@ -113,27 +120,28 @@ function App() {
       <section className="section about-section" id="about">
         <div>
           <p className="section-kicker">About</p>
-          <h2>在学习中动手，把想法一点点做出来。</h2>
+          <h2>从小项目开始，认真记录自己的学习轨迹。</h2>
         </div>
         <p>
-          我是一名大学生，正在学习前端开发，也对 AI 工具、个人网站、写作和项目实践感兴趣。我希望通过持续完成小项目来积累作品集，把学习过程变成可以展示、复盘和继续迭代的作品。
+          我是首承壮，一名大学生，正在学习前端开发和 AI 辅助创作。相比只停留在想法里，我更喜欢把一个小需求做成能打开、能展示、能继续修改的网页或工具。这个网站会作为我的个人作品集和成长记录，持续收纳我做过的项目、学到的技能和新的尝试。
         </p>
       </section>
 
       <section className="section" id="projects">
         <div className="section-heading">
           <p className="section-kicker">Projects</p>
-          <h2>我正在整理和尝试的小项目。</h2>
+          <h2>还在成长中的项目和学习实验。</h2>
         </div>
         <div className="project-grid">
           {projects.map((project) => (
             <article className="project-card" key={project.title}>
-              <span>{project.tag}</span>
+              <span>{project.status}</span>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <div className="project-meta">
-                <small>技术栈：{project.stack}</small>
-                <small>项目状态：{project.status}</small>
+              <div className="project-tags">
+                {project.tags.map((tag) => (
+                  <small key={tag}>{tag}</small>
+                ))}
               </div>
             </article>
           ))}
@@ -143,7 +151,7 @@ function App() {
       <section className="section skills-section" id="skills">
         <div className="section-heading">
           <p className="section-kicker">Skills</p>
-          <h2>我目前正在练习的技术和工具。</h2>
+          <h2>我目前正在练习和使用的工具。</h2>
         </div>
         <div className="skill-list">
           {skills.map((skill) => (
@@ -157,7 +165,7 @@ function App() {
       <section className="section contact-section" id="contact">
         <div>
           <p className="section-kicker">Contact</p>
-          <h2>欢迎联系我。</h2>
+          <h2>如果你想交流项目、学习或 AI 工具，可以通过邮箱联系我。</h2>
         </div>
         <div className="contact-links">
           <a href="mailto:shouchengzhuang@gmail.com">shouchengzhuang@gmail.com</a>

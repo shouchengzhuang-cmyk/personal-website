@@ -1,12 +1,10 @@
 # Personal Website
 
-这是首承壮的个人网站项目，用于展示个人介绍、技能、项目和联系方式。
+这是首承壮的个人网站项目，用于展示个人介绍、技能、项目、学习记录和联系方式。
 
 ## 在线访问
 
 https://personal-website-five-psi-38t34dz3a6.vercel.app
-
-上面的地址是当前 Vercel 部署地址。
 
 ## 技术栈
 
@@ -16,9 +14,9 @@ https://personal-website-five-psi-38t34dz3a6.vercel.app
 - Git / GitHub
 - Vercel
 
-## 功能
+## 主要内容
 
-- 个人介绍
+- 首页 Hero 介绍
 - 关于我
 - 技能展示
 - 项目展示
@@ -32,15 +30,20 @@ npm install
 npm run dev
 ```
 
+开发服务器启动后，按终端提示打开本地地址，通常是：
+
+```text
+http://localhost:5173/
+```
+
 ## 构建
 
 ```bash
 npm run build
 ```
 
-## 内容维护
+## 部署
 
-- 页面主要内容在 `src/App.jsx` 中维护。
-- 页面样式主要在 `src/App.css` 和 `src/index.css` 中维护。
-- 当前联系邮箱是 `shouchengzhuang@gmail.com`。
-- 当前 Vercel 链接已替换为真实部署地址。
+项目已部署到 Vercel。重新部署时，可以把代码推送到连接了 Vercel 的 GitHub 仓库，Vercel 会自动触发构建和发布。
+
+当前联系邮箱：`shouchengzhuang@gmail.com`
