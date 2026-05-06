@@ -4,30 +4,30 @@ const navItems = ['Home', 'About', 'Projects', 'Contact']
 
 const projects = [
   {
-    title: 'AI Study Planner',
-    description: 'A small tool concept for turning weekly goals into practical study tasks.',
-    tag: 'Productivity',
+    title: '个人网站',
+    description: '展示我的介绍、项目和联系方式，作为我在网上的个人主页。',
+    tag: 'Portfolio',
   },
   {
-    title: 'Personal Portfolio',
-    description: 'This website, built as a clean home base for projects, notes, and experiments.',
-    tag: 'Frontend',
+    title: 'Prompt 管理器',
+    description: '用于整理我常用的 AI 写作提示词，让创作和学习流程更清晰。',
+    tag: 'AI Tools',
   },
   {
-    title: 'Prompt Lab',
-    description: 'A collection of prompt patterns for learning, writing, and building with AI tools.',
-    tag: 'AI',
+    title: 'AI 创作实验',
+    description: '探索 AI 辅助写作、图像生成和网页开发，把想法快速做成作品。',
+    tag: 'Experiment',
   },
 ]
 
-const skills = ['React', 'JavaScript', 'AI Tools', 'Prompt Writing']
+const skills = ['React', 'JavaScript', 'Vite', 'AI Tools', 'Prompt Writing']
 
 function App() {
   return (
     <main className="site-shell">
       <nav className="navbar" aria-label="Primary navigation">
         <a className="brand" href="#home" aria-label="Go to home">
-          SC
+          CZ
         </a>
         <div className="nav-links">
           {navItems.map((item) => (
@@ -40,29 +40,28 @@ function App() {
 
       <section className="hero-section" id="home">
         <div className="hero-copy">
-          <p className="eyebrow">Student Developer</p>
-          <h1>Hi, I&apos;m Shichen.</h1>
-          <p className="hero-role">Building personal projects with AI, code, and curiosity.</p>
+          <p className="eyebrow">大学生 / AI 工具探索者</p>
+          <h1>你好，我是承壮。</h1>
+          <p className="hero-role">用 AI 和代码，把想法变成真正能打开的网页。</p>
           <p className="hero-intro">
-            I am learning to turn ideas into useful digital products, one small project at a
-            time.
+            我正在学习用 AI 和代码做自己的项目，把想法变成真正能打开、能使用的网页。
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#projects">
-              View Projects
+              查看项目
             </a>
             <a className="button secondary" href="#contact">
-              Contact Me
+              联系我
             </a>
           </div>
         </div>
 
         <div className="hero-panel" aria-label="Personal website highlight">
-          <span className="panel-label">Now exploring</span>
-          <strong>React interfaces, AI workflows, and better ways to learn by building.</strong>
+          <span className="panel-label">正在探索</span>
+          <strong>React 页面、AI 工具流程，以及用项目驱动学习的方法。</strong>
           <div className="panel-stats">
-            <span>03 Projects</span>
-            <span>04 Skills</span>
+            <span>03 个项目</span>
+            <span>05 项技能</span>
           </div>
         </div>
       </section>
@@ -70,19 +69,18 @@ function App() {
       <section className="section about-section" id="about">
         <div>
           <p className="section-kicker">About</p>
-          <h2>Learning in public, building with intention.</h2>
+          <h2>在学习中动手，把想法一点点做出来。</h2>
         </div>
         <p>
-          I am a university student exploring how AI tools and code can help me create my own
-          projects. This site is a simple place to show what I am learning, what I am building,
-          and how my ideas are becoming real products.
+          我是一名大学生，也是一名 AI 工具探索者。现在我正在学习用 React、Vite 和
+          JavaScript 搭建网页，同时尝试把 AI 用在写作、创意整理和项目开发里。
         </p>
       </section>
 
       <section className="section" id="projects">
         <div className="section-heading">
           <p className="section-kicker">Projects</p>
-          <h2>Small builds with real practice behind them.</h2>
+          <h2>我正在整理和尝试的小项目。</h2>
         </div>
         <div className="project-grid">
           {projects.map((project) => (
@@ -98,7 +96,7 @@ function App() {
       <section className="section skills-section" id="skills">
         <div className="section-heading">
           <p className="section-kicker">Skills</p>
-          <h2>Tools I am practicing right now.</h2>
+          <h2>我目前正在练习的技术和工具。</h2>
         </div>
         <div className="skill-list">
           {skills.map((skill) => (
@@ -112,7 +110,7 @@ function App() {
       <section className="section contact-section" id="contact">
         <div>
           <p className="section-kicker">Contact</p>
-          <h2>Let&apos;s connect.</h2>
+          <h2>欢迎联系我。</h2>
         </div>
         <div className="contact-links">
           <a href="mailto:your.email@example.com">your.email@example.com</a>
