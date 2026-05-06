@@ -6,7 +6,7 @@ const projects = [
   {
     title: 'Personal Website',
     description: '我的个人网站，用于展示个人介绍、技能、项目和联系方式。',
-    stack: 'React / Vite / Tailwind CSS / Vercel',
+    stack: 'React / Vite / CSS / Vercel',
     status: '已上线',
     tag: 'Portfolio',
   },
@@ -132,9 +132,9 @@ function App() {
           <h2>欢迎联系我。</h2>
         </div>
         <div className="contact-links">
-          {/* Replace this placeholder email with your real email address later. */}
-          <a href="mailto:your-email@example.com">your-email@example.com</a>
-          <a href="https://github.com/your-username" target="_blank" rel="noreferrer">
+          {/* Replace this placeholder with your real email address later. */}
+          <span className="contact-placeholder">邮箱待补充</span>
+          <a href="https://github.com/shouchengzhuang-cmyk" target="_blank" rel="noreferrer">
             GitHub
           </a>
         </div>
