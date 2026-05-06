@@ -1,6 +1,6 @@
 # Personal Website
 
-这是我的个人网站项目，用于展示个人介绍、技能、项目和联系方式。
+这是首承壮的个人网站项目，用于展示个人介绍、技能、项目和联系方式。
 
 ## 在线访问
 
@@ -12,7 +12,7 @@ https://personal-website-five-psi-38t34dz3a6.vercel.app
 
 - React
 - Vite
-- Tailwind CSS
+- CSS
 - Git / GitHub
 - Vercel
 
@@ -42,5 +42,5 @@ npm run build
 
 - 页面主要内容在 `src/App.jsx` 中维护。
 - 页面样式主要在 `src/App.css` 和 `src/index.css` 中维护。
-- 当前邮箱在页面中显示为“邮箱待补充”，之后可以替换为真实邮箱。
+- 当前联系邮箱是 `shouchengzhuang@gmail.com`。
 - 当前 Vercel 链接已替换为真实部署地址。
