@@ -1,26 +1,42 @@
 import './App.css'
 
-const navItems = ['Home', 'About', 'Projects', 'Contact']
+const navItems = ['Home', 'About', 'Projects', 'Skills', 'Contact']
 
 const projects = [
   {
-    title: '个人网站',
-    description: '展示我的介绍、项目和联系方式，作为我在网上的个人主页。',
+    title: 'Personal Website',
+    description: '我的个人网站，用于展示个人介绍、技能、项目和联系方式。',
+    stack: 'React / Vite / Tailwind CSS / Vercel',
+    status: '已上线',
     tag: 'Portfolio',
   },
   {
     title: 'Prompt 管理器',
     description: '用于整理我常用的 AI 写作提示词，让创作和学习流程更清晰。',
+    stack: 'AI Tools / Prompt Writing',
+    status: '规划中',
     tag: 'AI Tools',
   },
   {
     title: 'AI 创作实验',
     description: '探索 AI 辅助写作、图像生成和网页开发，把想法快速做成作品。',
+    stack: 'Writing / Image Generation / Web Development',
+    status: '持续实验',
     tag: 'Experiment',
   },
 ]
 
-const skills = ['React', 'JavaScript', 'Vite', 'AI Tools', 'Prompt Writing']
+const skills = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Vite',
+  'Tailwind CSS',
+  'Git / GitHub',
+  'Vercel',
+  'AI-assisted development',
+]
 
 function App() {
   return (
@@ -42,9 +58,9 @@ function App() {
         <div className="hero-copy">
           <p className="eyebrow">大学生 / AI 工具探索者</p>
           <h1>你好，我是承壮。</h1>
-          <p className="hero-role">用 AI 和代码，把想法变成真正能打开的网页。</p>
+          <p className="hero-role">用 AI 和代码，把想法做成可以访问和迭代的小项目。</p>
           <p className="hero-intro">
-            我正在学习用 AI 和代码做自己的项目，把想法变成真正能打开、能使用的网页。
+            我是承壮，一名正在学习前端开发、AI 工具使用和个人表达的大学生。我喜欢把想法做成可以真正访问、展示和迭代的小项目。
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#projects">
@@ -58,10 +74,10 @@ function App() {
 
         <div className="hero-panel" aria-label="Personal website highlight">
           <span className="panel-label">正在探索</span>
-          <strong>React 页面、AI 工具流程，以及用项目驱动学习的方法。</strong>
+          <strong>前端开发、AI 工具、个人表达，以及用持续实践积累作品集。</strong>
           <div className="panel-stats">
             <span>03 个项目</span>
-            <span>05 项技能</span>
+            <span>09 项技能</span>
           </div>
         </div>
       </section>
@@ -72,8 +88,7 @@ function App() {
           <h2>在学习中动手，把想法一点点做出来。</h2>
         </div>
         <p>
-          我是一名大学生，也是一名 AI 工具探索者。现在我正在学习用 React、Vite 和
-          JavaScript 搭建网页，同时尝试把 AI 用在写作、创意整理和项目开发里。
+          我是一名大学生，正在学习前端开发，也对 AI 工具、个人网站、写作和项目实践感兴趣。我希望通过持续完成小项目来积累作品集，把学习过程变成可以展示、复盘和继续迭代的作品。
         </p>
       </section>
 
@@ -88,6 +103,10 @@ function App() {
               <span>{project.tag}</span>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
+              <div className="project-meta">
+                <small>技术栈：{project.stack}</small>
+                <small>项目状态：{project.status}</small>
+              </div>
             </article>
           ))}
         </div>
@@ -113,12 +132,10 @@ function App() {
           <h2>欢迎联系我。</h2>
         </div>
         <div className="contact-links">
-          <a href="mailto:your.email@example.com">your.email@example.com</a>
+          {/* Replace this placeholder email with your real email address later. */}
+          <a href="mailto:your-email@example.com">your-email@example.com</a>
           <a href="https://github.com/your-username" target="_blank" rel="noreferrer">
             GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer">
-            LinkedIn
           </a>
         </div>
       </section>

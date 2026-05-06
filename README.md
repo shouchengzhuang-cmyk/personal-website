@@ -1,16 +1,46 @@
-# React + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+这是我的个人网站项目，用于展示个人介绍、技能、项目和联系方式。
 
-Currently, two official plugins are available:
+## 在线访问
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://your-vercel-url.vercel.app
 
-## React Compiler
+上线后可以把上面的占位地址替换为真实的 Vercel 部署地址。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 技术栈
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- Tailwind CSS
+- Git / GitHub
+- Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 功能
+
+- 个人介绍
+- 关于我
+- 技能展示
+- 项目展示
+- 联系方式
+- 响应式布局
+
+## 本地运行
+
+```bash
+npm install
+npm run dev
+```
+
+## 构建
+
+```bash
+npm run build
+```
+
+## 内容维护
+
+- 页面主要内容在 `src/App.jsx` 中维护。
+- 页面样式主要在 `src/App.css` 和 `src/index.css` 中维护。
+- 当前邮箱使用 `your-email@example.com` 作为占位，之后可以替换为真实邮箱。
+- 当前 Vercel 链接使用占位地址，之后可以替换为真实部署地址。
