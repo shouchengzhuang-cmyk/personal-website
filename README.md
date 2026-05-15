@@ -23,6 +23,13 @@ https://personal-website-five-psi-38t34dz3a6.vercel.app
 - 联系方式
 - 响应式布局
 
+## 项目展示
+
+- Prompt Vault：整理常用 AI 提示词的工具想法。
+- Personal Website：当前这个个人主页。
+- Learning Experiments：课程实验、前端练习和 AI 辅助创作记录。
+- 今天吃什么：一个帮我快速决定吃什么的移动端小工具，按时间自动切换早餐、正餐和夜宵，用上划/下划刷推荐。
+
 ## 本地运行
 
 ```bash

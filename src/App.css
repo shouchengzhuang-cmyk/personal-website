@@ -439,6 +439,20 @@
   font-size: 0.78rem;
 }
 
+.project-link {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 22px;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: #e0f2fe;
+}
+
 .skill-list {
   display: flex;
   flex-wrap: wrap;

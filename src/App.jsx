@@ -21,6 +21,13 @@ const projects = [
     tags: ['HTML', 'CSS', 'JavaScript'],
     status: '学习中',
   },
+  {
+    title: '今天吃什么',
+    description: '一个帮我快速决定吃什么的移动端小工具。按时间自动切换早餐、正餐和夜宵，用上划/下划刷推荐。',
+    tags: ['React', 'Vite', 'Mobile-first', 'LocalStorage'],
+    status: '已上线',
+    liveUrl: 'https://what-to-eat-six.vercel.app/',
+  },
 ]
 
 const skills = [
@@ -143,6 +150,11 @@ function App() {
                   <small key={tag}>{tag}</small>
                 ))}
               </div>
+              {project.liveUrl && (
+                <a className="project-link" href={project.liveUrl} target="_blank" rel="noreferrer">
+                  在线预览
+                </a>
+              )}
             </article>
           ))}
         </div>
